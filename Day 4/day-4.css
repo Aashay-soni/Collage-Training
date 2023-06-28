@@ -1,0 +1,143 @@
+body {
+    overflow-x: hidden;
+    color: black;
+}
+
+.fullscreen_bg {
+    color: black;
+}
+
+.fullscreen_bg {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -1;
+    background-size: cover;
+}
+
+.vid1 {
+    position: fixed;
+    width: auto;
+    height: auto;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.container {
+    position: relative;
+    width: 30%;
+    margin: auto;
+}
+
+.image {
+    display: block;
+    width: 400px;
+    height: 400px;
+}
+
+.image2 {
+    position: center;
+    display: block;
+    width: 400px;
+    height: 400px;
+}
+
+.image3 {
+    position: center;
+    display: block;
+    width: 1600px;
+    height: 300px;
+}
+
+.container:hover .overlay {
+    opacity: 1;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transition: 4s ease;
+    opacity: 0;
+    background-color: #008CBA;
+    height: 400px;
+    width: 400px;
+}
+
+.gst {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 600px;
+    width: 600px;
+}
+
+.gst2 {
+    position: absolute;
+    top: 0;
+    bottom: 0%;
+    left: 0;
+    right: 0;
+    height: 400px;
+    width: 400px;
+}
+
+.ghost {
+    display: block;
+    width: 400px;
+    height: 400px;
+    bottom: inherit;
+    position: fixed;
+    right: inherit;
+    top: auto;
+    animation: animate 4s alternate-reverse infinite;
+    animation-duration: 2s;
+    background-color: #b80606;
+    border-radius: 50%;
+    box-shadow: 0 0 500px #ff3d3d,
+        0 0 500px #ff2c2c,
+        0 0 500px #f30404;
+}
+
+@keyframes animate {
+    0% {
+        transform: rotate3d(0, 0, 0, 360deg)
+    }
+    30% {
+        transform: rotate3d(50, 50, 50, 90deg)
+    }
+    50% {
+        transform: rotate3d(100, 100, 100, 180deg)
+    }
+
+    100% {
+        transform: rotate3d(500, 500, 500, 360deg)
+    }
+}
+
+.ghost2 {
+    position: fixed;
+    display: block;
+    width: 400px;
+    bottom: inherit;
+    height: 400px;
+    left: inherit;
+    animation: animate 4s reverse infinite;
+    animation-duration: 2s;
+    background-color: #b80606;
+    border-radius: 50%;
+    box-shadow: 0 0 500px #ff3d3d,
+        0 0 500px #ff2c2c,
+        0 0 500px #f30404;
+}
+.audi{
+    position: fixed;
+    visibility: hidden;
+}
